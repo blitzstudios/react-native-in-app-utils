@@ -231,7 +231,7 @@ RCT_EXPORT_METHOD(receiptData:(RCTResponseSenderBlock)callback)
                                       @"currencyCode": [item.priceLocale objectForKey:NSLocaleCurrencyCode],
                                       @"priceString": item.priceString,
                                       @"countryCode": [item.priceLocale objectForKey: NSLocaleCountryCode],
-                                      @"downloadable": item.isDownloadable ? @"true" : @"false" ,
+                                      @"isDownloadable": item.isDownloadable ? @"true" : @"false" ,
                                       @"description": item.localizedDescription ? item.localizedDescription : @"",
                                       @"title": item.localizedTitle ? item.localizedTitle : @"",
                                       };
